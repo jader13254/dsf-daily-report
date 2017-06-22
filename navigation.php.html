@@ -1,0 +1,37 @@
+<html>
+<head>
+<link href="design.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <div id="menu">
+    <ul>
+      <li class="topmenu">
+        <a href="">Konto</a>
+        <ul>
+          <li class="submenu"><a href="user.php">Mein Konto</a></li>
+			<li class="submenu"><a href="message.php">Meine Nachrichten</a></li>
+			<li class="submenu"><a href="useroptions.php">Konto bearbeiten</a></li>
+			<?php if ($admin == 1) {
+echo "<li class='submenu'><a href='admin.php'>Adminseite</a></li>";}
+?>
+        </ul>
+      </li>
+      <li class="topmenu">
+        <a href="">Tipps</a>
+        <ul>
+          <li class="submenu"><a href="tips.php">Meine Tipps</a></li>
+          <li class="submenu"><a href=""></a></li>
+        </ul>
+      </li>
+      <li class="topmenu">
+        <a href="">Spiele</a>
+        <ul>
+          <li class="submenu"><a href=""></a></li>
+          <li class="submenu"><a href=""></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<center><div id='fbar' style='position: absolute; bottom: 20px; left: 0px; right: 0px;'><font size='2'>——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————<br><a href='contact.php'>Fragen oder Anregungen?</a> </font></div></center>
+</body>
+</html>
